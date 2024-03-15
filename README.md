@@ -3,6 +3,9 @@
 
 This project aims to create a responsive travel and tourism website for Gogaga Holidays using HTML and CSS.
 
+## Deployed Link:
+The website is deployed at [https://gogagaholidays1.ccbp.tech/](https://gogagaholidays1.ccbp.tech/).
+
 ## Key Features:
 
 1. **Holiday Packages**: Display various packages with details.
