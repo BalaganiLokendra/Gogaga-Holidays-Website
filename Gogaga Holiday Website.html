@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gogaga Holidays</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://s3.us-east-1.amazonaws.com/cdn.designcrowd.com/blog/tourism-logos-to-promote-your-happy-travels/airplane-flight-sky-travel-by-ions-brandcrowd.png" class="food-munch-logo" />
+            </a>
+            <h4>Gogaga Holidays</h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="#sectionLogin" onclick="display('sectionLogin')" id="navItem2">Login/Sign Up</a>
+                    <a class="nav-link active" id="navItem1" href="#sectionFlightBooking" onclick="display('sectionFlightBooking')">
+                        Book Flight Tickets
+                        <span class="sr-only">(current)</span>
+                    </a>
+
+
+
+                    <a class="nav-link" href="#holidayPackagesSection" id="navItem3">Holiday Packages</a>
+                    <a class="nav-link" href="#sectionGift" id="navItem3" onclick="display('sectionGift')">Your Gifts</a>
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Whu Choose Us?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKXYSs2F_0O04sLv8AjIH43Owr2rEIfkFEOA&usqp=CAU" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="menu-item-link2">Explore World!</h5>
+                    <p class="menu-item-link2">Unlock Worldly Wonders Today.</p>
+                    <a href="#holidayPackagesSection" class="menu-item-link1">
+                        View Trending Holiday Packages
+                        <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Pdh4TzdNAK0SiA0UgTciIK2D9mFl0hjfeQ&usqp=CAU" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="menu-item-link2">Explore Skies!</h5>
+                    <p class="menu-item-link2">Discover the Skies with Us</p>
+                    <button class="carousel-button btn btn-warning" onclick="display('section')">Book Tickets</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfC7oIlaIFavhbc1lCytmMU9KPnhXB5e7JaA&usqp=CAU" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5 class="menu-item-link2">Explore Hotels</h5>
+                    <p class="menu-item-link2">Book your comfort.</p>
+                    <button class="carousel-button btn btn-warning" onclick="display('sectionBeaches')">Book Hotel</button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!--  <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+       <div class="text-center">
+           <h1 class="banner-heading mb-3">Book & Travel Anytime</h1>
+           <p class="banner-caption mb-4">Eat Smart & Healthy</p>
+           <button class="custom-button">View Menu</button>
+           <button class="custom-outline-button">Order Now</button>
+       </div>
+   </div>
+    -->
+
+
+
+
+
+
+
+
+
+    <div id="sectionExploreWorld">
+        <div class="explore-menu-section places pt-5 pb-5">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Adorable Views</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Farm Houses</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Beaches</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <section class="main-container">
+                        <div class="location" id="home">
+                            <h1 id="home" style="color:black;">Majestic panoramas</h1>
+                            <div class="box">
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/1d9c40a4-385c-4682-8f98-03a5c8cdd5bd.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-604855093626546308/original/e87a6018-10e5-488b-a7f7-cddca3f63baf.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1049734460509840745/original/148f54ff-cba9-41c7-aadc-68e7ccaa09ae.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1049733190500047152/original/5551c262-55d1-4a2d-94f0-f0ad98ce468f.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-629505065235913525/original/2802fad6-7498-4dde-824a-dc269946db29.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/c3c4c733-8fea-4272-8397-56e2ac7b1d72.jpg?im_w=720" alt="" /></a>
+
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-46684637/original/28047411-e850-44cb-a057-eaba7d678d85.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-54233887/original/34a2d66d-d5aa-48e9-8cd6-adb7176e3699.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-907949491857176822/original/b6bd6a48-860c-424c-a707-e968fa81f197.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/8446ea5b-eae8-4f1e-8090-9ba3d1705c86.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/4009782c-d801-4ac2-9ad5-bf7c7f94313d.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/b221b0e0-b08c-4e0a-b6c8-cf56e7d58b5c.jpg?im_w=720" alt="" /></a>
+                            </div>
+                        </div>
+                        <button class="btn btn-info mt-3" onclick="display('sectionAdorableViews')">Explore now</button>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <section class="main-container">
+                        <div class="location" id="home">
+                            <h1 id="home" style="color:black;">Farmstead charm</h1>
+                            <div class="box">
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/d8d629d7-9307-4b24-a8ae-b01d95e36124.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-819818987227302539/original/85395d11-63f2-4f59-9c0d-753d41cd34a1.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-675108014847583143/original/a40ae4d9-6f8d-45d4-9994-5a004d31bcea.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-657011800148868945/original/a1083c29-58e1-4acf-b79d-14da9dad3d26.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-52844386/original/30562e85-22ae-4e6f-aa80-8bf400ef301a.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/27fb3a6e-3938-4af3-a090-20c9793c1c1f.jpg?im_w=720" alt="" /></a>
+
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-585226496113729620/original/8c5c9f3f-013e-4658-80ef-d5f7d5a96b5e.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/7a02d92c-9bd1-47c4-bdc4-c9acfcb1e6f5.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-26476736/original/41552365-d1c7-414b-b66a-99e4be28e88a.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-51641768/original/cfebdf3e-395b-46ac-a050-7827f30663cf.png?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/c55a2969-b6b6-4ce5-a3a1-ebe31836cfdf.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-637436694291207290/original/e3024404-e451-41a1-9206-2269a9b3de8a.jpeg?im_w=720" alt="" /></a>
+                            </div>
+                        </div>
+                        <button class="btn btn-info mt-3" onclick="display('sectionFarmHouses')">Explore now</button>
+                    </section>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                    <section class="main-container">
+                        <div class="location" id="home">
+                            <h1 id="home" style="color:black;">Turquoise waters</h1>
+                            <div class="box">
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/7a0e4e5f-ce39-485a-b8d3-cc95c2c81a7e.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-787294559973104944/original/86527e20-dca8-42db-953b-5feb2e83c752.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/bce4ba91-39b4-4620-8643-bacba0d17a73.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/aa9b526c-0a37-45ad-879e-a836b3685f8d.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1000664278443242151/original/11d173eb-ecef-49d1-93a4-432406ec6096.png?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/8db909dd-8ce1-45dc-9a59-5f5e1b2216ad.jpg?im_w=720" alt="" /></a>
+
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/4ec161c9-df64-482f-b57f-aa8ea4bbffef.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-788011072149986574/original/c71d3eaa-8233-4516-b494-6f620782aad6.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-719909568256524742/original/31e03712-8679-4b21-9f6a-e47b07205588.jpeg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/b8cf68c5-0705-46d2-9d08-54168e3cb7d3.jpg?im_w=720" alt="" /></a>
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/5c051104-9a78-4a3e-9fc8-2cea8e4e50d0.jpg?im_w=720" alt="" /></a>
+
+                                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-928091960058442135/original/73030cb3-57bf-4083-b51c-b5eebbc3cac3.png?im_w=720" alt="" /></a>
+                            </div>
+                        </div>
+                        <button class="btn btn-info mt-3" onclick="display('sectionBeaches')">Explore now</button>
+                    </section>
+                </div>
+            </div>
+            <!-- <h1 class="menu-section-heading">Explore Packages</h1> -->
+
+            <!--   <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Adorable Views</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Farm Houses</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Beaches</a>
+              </li>
+          </ul>
+                  
+                  <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          
+              <section class="main-container">
+                  <div class="location" id="home">
+                      <h1 id="home" style="color:black;">Majestic panoramas</h1>
+                      <div class="box">
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/1d9c40a4-385c-4682-8f98-03a5c8cdd5bd.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-604855093626546308/original/e87a6018-10e5-488b-a7f7-cddca3f63baf.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1049734460509840745/original/148f54ff-cba9-41c7-aadc-68e7ccaa09ae.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1049733190500047152/original/5551c262-55d1-4a2d-94f0-f0ad98ce468f.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-629505065235913525/original/2802fad6-7498-4dde-824a-dc269946db29.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/c3c4c733-8fea-4272-8397-56e2ac7b1d72.jpg?im_w=720" alt="" /></a>
+          
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-46684637/original/28047411-e850-44cb-a057-eaba7d678d85.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-54233887/original/34a2d66d-d5aa-48e9-8cd6-adb7176e3699.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-907949491857176822/original/b6bd6a48-860c-424c-a707-e968fa81f197.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/8446ea5b-eae8-4f1e-8090-9ba3d1705c86.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/4009782c-d801-4ac2-9ad5-bf7c7f94313d.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/b221b0e0-b08c-4e0a-b6c8-cf56e7d58b5c.jpg?im_w=720" alt="" /></a>
+                      </div>
+                  </div>
+                  <button class="btn btn-info mt-3" onclick="display('section01')">Explore now</button>
+              </section>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          
+              <section class="main-container">
+                  <div class="location" id="home">
+                      <h1 id="home" style="color:black;">Farmstead charm</h1>
+                      <div class="box">
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/d8d629d7-9307-4b24-a8ae-b01d95e36124.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-819818987227302539/original/85395d11-63f2-4f59-9c0d-753d41cd34a1.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-675108014847583143/original/a40ae4d9-6f8d-45d4-9994-5a004d31bcea.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-657011800148868945/original/a1083c29-58e1-4acf-b79d-14da9dad3d26.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-52844386/original/30562e85-22ae-4e6f-aa80-8bf400ef301a.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/27fb3a6e-3938-4af3-a090-20c9793c1c1f.jpg?im_w=720" alt="" /></a>
+          
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-585226496113729620/original/8c5c9f3f-013e-4658-80ef-d5f7d5a96b5e.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/7a02d92c-9bd1-47c4-bdc4-c9acfcb1e6f5.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-26476736/original/41552365-d1c7-414b-b66a-99e4be28e88a.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-51641768/original/cfebdf3e-395b-46ac-a050-7827f30663cf.png?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/c55a2969-b6b6-4ce5-a3a1-ebe31836cfdf.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-637436694291207290/original/e3024404-e451-41a1-9206-2269a9b3de8a.jpeg?im_w=720" alt="" /></a>
+                      </div>
+                  </div>
+                  <button class="btn btn-info mt-3" onclick="display('section02')">Explore now</button>
+              </section>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          
+              <section class="main-container">
+                  <div class="location" id="home">
+                      <h1 id="home" style="color:black;">Turquoise waters</h1>
+                      <div class="box">
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/7a0e4e5f-ce39-485a-b8d3-cc95c2c81a7e.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-787294559973104944/original/86527e20-dca8-42db-953b-5feb2e83c752.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/bce4ba91-39b4-4620-8643-bacba0d17a73.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/aa9b526c-0a37-45ad-879e-a836b3685f8d.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1000664278443242151/original/11d173eb-ecef-49d1-93a4-432406ec6096.png?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/8db909dd-8ce1-45dc-9a59-5f5e1b2216ad.jpg?im_w=720" alt="" /></a>
+          
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/4ec161c9-df64-482f-b57f-aa8ea4bbffef.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-788011072149986574/original/c71d3eaa-8233-4516-b494-6f620782aad6.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-719909568256524742/original/31e03712-8679-4b21-9f6a-e47b07205588.jpeg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/b8cf68c5-0705-46d2-9d08-54168e3cb7d3.jpg?im_w=720" alt="" /></a>
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/5c051104-9a78-4a3e-9fc8-2cea8e4e50d0.jpg?im_w=720" alt="" /></a>
+          
+                          <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-928091960058442135/original/73030cb3-57bf-4083-b51c-b5eebbc3cac3.png?im_w=720" alt="" /></a>
+                      </div>
+                  </div>
+                  <button class="btn btn-info mt-3" onclick="display('section03')">Explore now</button>
+              </section>
+          </div>
+                  </div> -->
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="sectionAdorableViews">
+        <div class="explore-menu-section adorable-views-explore">
+            <div class="container">
+                <h1 class="wcu-section-heading">Set out to explore the captivating landscapes of tourism</h1>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/1d9c40a4-385c-4682-8f98-03a5c8cdd5bd.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Gokarna, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Gokarna,_Karnataka" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-604855093626546308/original/e87a6018-10e5-488b-a7f7-cddca3f63baf.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Nandi Hills, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Nandi_Hills,_India" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1049734460509840745/original/148f54ff-cba9-41c7-aadc-68e7ccaa09ae.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Panchgani, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Panchgani" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1049733190500047152/original/5551c262-55d1-4a2d-94f0-f0ad98ce468f.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Vathalmalai, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Dharmapuri_district" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-629505065235913525/original/2802fad6-7498-4dde-824a-dc269946db29.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Murud, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Murud-Janjira" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/c3c4c733-8fea-4272-8397-56e2ac7b1d72.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Mira Bhayandar</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Mira-Bhayandar" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-46684637/original/28047411-e850-44cb-a057-eaba7d678d85.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Bhowali Range, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Bhowali" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-54233887/original/34a2d66d-d5aa-48e9-8cd6-adb7176e3699.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Lonawala, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Lonavala" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-907949491857176822/original/b6bd6a48-860c-424c-a707-e968fa81f197.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Sancoale, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Sancoale" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/8446ea5b-eae8-4f1e-8090-9ba3d1705c86.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Muddenahalli, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Muddenahalli" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/4009782c-d801-4ac2-9ad5-bf7c7f94313d.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Mahagaon, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Mahagaon" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/b221b0e0-b08c-4e0a-b6c8-cf56e7d58b5c.jpg?im_w=720
+                        " class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Morjim, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Morjim" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-2" onclick="display('sectionExploreWorld')">Back</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="sectionFarmHouses">
+        <div class="explore-menu-section farmhouse-explore">
+            <div class="container">
+                <h1 class="wcu-section-heading">Embark on a countryside adventure to discover charming farmhouses.</h1>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/d8d629d7-9307-4b24-a8ae-b01d95e36124.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Alibaug, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Alibag" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-819818987227302539/original/85395d11-63f2-4f59-9c0d-753d41cd34a1.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Coorg, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Kodagu_district" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-675108014847583143/original/a40ae4d9-6f8d-45d4-9994-5a004d31bcea.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Ooty, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Ooty" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-657011800148868945/original/a1083c29-58e1-4acf-b79d-14da9dad3d26.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Panchgani, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Panchgani" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-52844386/original/30562e85-22ae-4e6f-aa80-8bf400ef301a.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Mahabaleshwar, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Mahabaleshwar" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/27fb3a6e-3938-4af3-a090-20c9793c1c1f.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Wayanad, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Wayanad_district" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-585226496113729620/original/8c5c9f3f-013e-4658-80ef-d5f7d5a96b5e.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Kodaikanal, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Kodaikanal" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/7a02d92c-9bd1-47c4-bdc4-c9acfcb1e6f5.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Rishikesh, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Rishikesh" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-26476736/original/41552365-d1c7-414b-b66a-99e4be28e88a.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Jaipur, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Jaipur" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-51641768/original/cfebdf3e-395b-46ac-a050-7827f30663cf.png?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Udaipur, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Udaipur" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/c55a2969-b6b6-4ce5-a3a1-ebe31836cfdf.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Pondicherry, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Pondicherry" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-637436694291207290/original/e3024404-e451-41a1-9206-2269a9b3de8a.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Munnar, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Munnar" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-2" onclick="display('sectionExploreWorld')">Back</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionBeaches">
+        <div class="explore-menu-section beach-explore">
+            <div class="container">
+                <h1 class="wcu-section-heading">Venture forth to uncover the serene beauty of coastal paradises.</h1>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/7a0e4e5f-ce39-485a-b8d3-cc95c2c81a7e.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Goa, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Goa" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-787294559973104944/original/86527e20-dca8-42db-953b-5feb2e83c752.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Kovalam, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Kovalam" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/bce4ba91-39b4-4620-8643-bacba0d17a73.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Varkala, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Varkala" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/aa9b526c-0a37-45ad-879e-a836b3685f8d.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Gokarna, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Gokarna,_Karnataka" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-1000664278443242151/original/11d173eb-ecef-49d1-93a4-432406ec6096.png?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Andaman Islands, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Andaman_Islands" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/8db909dd-8ce1-45dc-9a59-5f5e1b2216ad.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Puri, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Puri" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/4ec161c9-df64-482f-b57f-aa8ea4bbffef.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Digha, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2" onclick="display('sectionPayment')">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Digha" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-788011072149986574/original/c71d3eaa-8233-4516-b494-6f620782aad6.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Marina Beach, Chennai, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2 onclick=" display('sectionPayment')"">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Marina_Beach" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-719909568256524742/original/31e03712-8679-4b21-9f6a-e47b07205588.jpeg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Alleppey, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2  onclick=" display('sectionPayment')"">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Alappuzha" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/b8cf68c5-0705-46d2-9d08-54168e3cb7d3.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Diu, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2  onclick=" display('sectionPayment')"">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Diu,_India" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/5c051104-9a78-4a3e-9fc8-2cea8e4e50d0.jpg?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Mahabalipuram, India
+                            </h1>
+                            <button class="btn btn-primary mb-2 mt-2  onclick=" display('sectionPayment')"">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Mamallapuram" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-928091960058442135/original/73030cb3-57bf-4083-b51c-b5eebbc3cac3.png?im_w=720" class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Tarkarli, India</h1>
+                            <button class="btn btn-primary mb-2 mt-2  onclick=" display('sectionPayment')"">Book Room</button>
+                            <div><a href="https://en.wikipedia.org/wiki/Tarkarli" class="menu-item-link">
+                                    Know more
+                                    <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary mb-2" onclick="display('sectionExploreWorld')">Back</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="wcuSection">
+        <div class="wcu-section pt-5 pb-5" id="wcuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-section-heading">Why Choose Us?</h1>
+                        <p class="wcu-section-description">
+                            For unbeatable travel experiences tailored to your needs, choose us. From seamless flight bookings to luxurious hotel accommodations, we've got you covered every step of the way.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE5uFIWB6n0KkX_x-ub3lRVYoaVO7jBcSXcg&usqp=CAU" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Exceptional Customer Service</h1>
+                            <p class="wcu-card-description">
+                                Experience outstanding customer service.Our team goes above and beyond to assist travelers with their bookings, address concerns promptly, and ensure a seamless experience from start to finish.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6uNh0Wv5UV0kPy7NEA2LkToiRtRElh_zPuur7oeJjzYf96DtTTDQiamNStWlfunqjKCk&usqp=CAU" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Wide Selection of Options</h1>
+                            <p class="wcu-card-description">
+                                Find the variety and quality of travel, flight, and hotel options available through your platform. You will come to know that you can choose from a diverse range of destinations, airlines, and accommodations, catering to every budget and preference.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqTusvaV5yEVMJSti0hAI1ji0cpl_0YDxU3Q&usqp=CAU" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Competitive Pricing and Deals</h1>
+                            <p class="wcu-card-description">
+
+                                Travel Coupons & Offers upto
+                                <span class="offers">50% OFF</span>
+                                and Exclusive Promo Codes on flight fares, special hotel rates, or bundled travel packages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="holidayPackagesSection">
+        <div class="healthy-food-section pt-5 pb-5">
+
+            <div class="container">
+                <h1 class="healthy-food-section-heading">Holiday Packages</h1>
+                <div class="row">
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-wrap packages">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/2d34e5_aa2087c630264cbf9d3ce03f709208f0~mv2.jpg/v1/fill/w_210,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2d34e5_aa2087c630264cbf9d3ce03f709208f0~mv2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title wcu-card-title">Luxurious Kochi Munnar with Alleppey </h5>
+                                    <p class="card-text wcu-card-description">Experience the epitome of luxury with a breathtaking journey spanning Kochi, Munnar, and Alleppey.</p>
+                                    <a href="#" class="btn btn-success">4 Nights/ 5 Days</a>
+                                    <p class="mt-3 wcu-card-description" style="font-weight:bold;"><span class="mr-3" style="text-decoration-line: line-through; font-weight:normal;">59,999.0</span>55,999.0</p>
+                                    <a href="#" class="btn btn-info" onclick="display('sectionPayment')">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/2d34e5_067970abb5aa4c73911ba8618a6b6167~mv2.png/v1/fill/w_210,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2d34e5_067970abb5aa4c73911ba8618a6b6167~mv2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title  wcu-card-title">Luxurious Thekkedey & Alleppey</h5>
+                                    <p class="card-text wcu-card-description">Embark on a lavish excursion exploring the stunning locales of Thekkady and Alleppey.</p>
+                                    <a href="#" class="btn btn-success">2 Nights/ 3 Days</a>
+                                    <p class="mt-3 wcu-card-description" style="font-weight:bold;"><span class="mr-3" style="text-decoration-line: line-through; font-weight:normal;">19,999.0</span>15,999.0</p>
+                                    <a href="#" class="btn btn-info" onclick="display('sectionPayment')">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/2d34e5_e48f0c6887254bd6a52c4f3a1750f6a8~mv2.jpg/v1/fill/w_210,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2d34e5_e48f0c6887254bd6a52c4f3a1750f6a8~mv2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title wcu-card-title">Luxurious short break to Munnar & Thekkedey</h5>
+                                    <p class="card-text wcu-card-description">Escape on a lavish getaway to Munnar and Thekkady.</p>
+                                    <a href="#" class="btn btn-success">3 Nights/ 4 Days</a>
+                                    <p class="mt-3 wcu-card-description" style="font-weight:bold;"><span class="mr-3" style="text-decoration-line: line-through; font-weight:normal;">29,999.0</span>25,999.0</p>
+                                    <a href="#" class="btn btn-info" onclick="display('sectionPayment')">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/2d34e5_a306f0ebb74a4f3dad290f56469f9ccc~mv2.jpg/v1/fill/w_580,h_420,al_c,lg_1,q_80,enc_auto/2d34e5_a306f0ebb74a4f3dad290f56469f9ccc~mv2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title wcu-card-title">Sunset Reef Resort & Spa- 3 star</h5>
+                                    <p class="card-text wcu-card-description">Sunset Reef Resort & Spa: A Tranquil 3-Star Escape</p>
+                                    <a href="#" class="btn btn-success">4 Nights/ 5 Days</a>
+                                    <p class="mt-3 wcu-card-description" style="font-weight:bold;"><span class="mr-3" style="text-decoration-line: line-through; font-weight:normal;">39,999.0</span>35,999.0</p>
+                                    <a href="#" class="btn btn-info" onclick="display('sectionPayment')">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/2d34e5_0a237563b4da485e8890c7db2ee0d656~mv2.jpg/v1/fill/w_210,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2d34e5_0a237563b4da485e8890c7db2ee0d656~mv2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title wcu-card-title">Sun Siyam Vilu Reef 3 Nights in Aqua Villa with Pool</h5>
+                                    <p class="card-text wcu-card-description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-success">3 Nights/ 4 Days</a>
+                                    <p class="mt-3 wcu-card-description" style="font-weight:bold;"><span class="mr-3" style="text-decoration-line: line-through; font-weight:normal;">49,999.0</span>45,999.0</p>
+                                    <a href="#" class="btn btn-info" onclick="display('sectionPayment')">Book Now</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://static.wixstatic.com/media/2d34e5_2f2e6dfbd77c496bb015da54af8f3507~mv2.jpg/v1/fill/w_210,h_210,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2d34e5_2f2e6dfbd77c496bb015da54af8f3507~mv2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title wcu-card-title">Casuarina Resort & Spa - 3 star</h5>
+                                    <p class="card-text wcu-card-description">Discover Serenity at Casuarina Resort & Spa: Your Idyllic 3-Star Getaway.</p>
+                                    <a href="#" class="btn btn-success">4 Nights/ 5 Days</a>
+                                    <p class="mt-3 wcu-card-description" style="font-weight:bold;"><span class="mr-3" style="text-decoration-line: line-through; font-weight:normal;">79,999.0</span>73,999.0</p>
+                                    <a href="#" class="btn btn-info" onclick="display('sectionPayment')">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionPayment">
+        <div class="delivery-and-payment-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-1 order-md-2">
+                        <div class="text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXG9HpCJ-UVXjyHaCNr6H2UieHPEkIwk4Qog&usqp=CAU" class="delivery-and-payment-section-img" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 order-2 order-md-1">
+                        <h1 class="delivery-and-payment-section-heading">
+                            Payment
+                        </h1>
+                        <p class="delivery-and-payment-section-description">
+                            Enjoy hassle-free payment with the plenitude of payment options
+                            available for you. Get live tracking and locate your food on a
+                            live map. It's quite a sight to see your food arrive to your door.
+                            Plus, you get a 5% discount on every order every time you pay
+                            online.
+                        </p>
+                        <button class="custom-button">Pay Now</button>
+                        <button class="custom-button" onclick="display('holidayPackagesSection')">Back</button>
+                        <div class="mt-3">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png" class="payment-card-img" />
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png" class="payment-card-img" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionGift">
+        <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            We have a surprise gift for you
+                        </p>
+                        <div class="d-md-none">
+                            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                        </div>
+                        <div>
+                            <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                                Redeem Gift
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog mt-5">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                                                Gift Voucher
+                                            </h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="https://i.pinimg.com/736x/aa/99/b1/aa99b13fbbe90eb1ae83d6b7638ce952.jpg" class="w-100" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="followUsSection">
+        <div class="follow-us-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                    </div>
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-twitter icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram icon"></i>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook icon"></i>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="https://s3.us-east-1.amazonaws.com/cdn.designcrowd.com/blog/tourism-logos-to-promote-your-happy-travels/airplane-flight-sky-travel-by-ions-brandcrowd.png" class="food-munch-logo" />
+                    <h1 class="footer-section-mail-id">book@gogagaholidays.com</h1>
+                    <p class="footer-section-address">
+                        123 Ayur Vigyan Nagar, New Delhi, India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionLogin">
+        <div class="container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button class="but" type="submit">Login</button>
+            </form>
+            <hr>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username" required>
+                <input type="password" id="signupPassword" placeholder="Password" required>
+                <button class="but" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="sectionFlightBooking">
+        <div class="cont text-center">
+            <h2>Flight Ticket Booking</h2>
+            <form id="bookingForm">
+                <label for="from">From</label>
+                <input type="text" id="from" placeholder="From" required><br>
+                <label for="to">To</label>
+                <input type="text" id="to" placeholder="To" required><br>
+                <label for="journeyDate">Date of Journey</label>
+                <input type="date" id="journeyDate" required><br>
+                <label for="returnDate">Return Date</label>
+                <input type="date" id="returnDate"><br>
+                <label for="numTickets">Number of Tickets</label>
+                <input type="number" id="numTickets" min="1" max="10" required><br>
+                <div id="passengerDetails"></div>
+                <button class="buttonflight " type="submit" onclick="display('sectionPayment')">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
